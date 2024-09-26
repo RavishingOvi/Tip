@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium',
+     'Arial Narrow', Arial, sans-serif;
+     background: radial-gradient(orange, white)
+
+}
+.container{
+    /* border: 2px solid black; */
+
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Calculator{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 15px;
+    width: 400px;
+    font-size: 1rem;
+    font-weight: italic;
+  }
+           
+  .Calculator input{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid lightgray;
+
+  }
+  .Calculator button{
+    width: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+  }
+
+  .Calculator button:hover{
+    background-color: gold;
+  }
+
+  .Calculator select{
+    width: 80%;
+    padding: 5px;
+    outline: none;
+  }
+  #tip-amount{
+     visibility: hidden;
+    min-width: 250px;
+    margin: auto;
+    background-color: lime;
+    color: brown;
+    bottom: 30px;
+    text-align: center;
+   border-radius: 4px;
+   padding: 16px;
+    position: fixed;
+  }
+  #tip-amount.show{
+    visibility: show;
+    -webkit-animation: fadein 0.4s, fadeout 0.8s 1.3s;
+    animation: fadein 0.4s, fadeout 0.8s 1.3s;
+      }
+      @-webkit-keyframes fadein{
+        from{bottom:0; opacity:0}
+        to{bottom: 30px; opacity: 1;}
+      }
+      @keyframes fadein{
+        from{bottom:0; opacity:0}
+        to{bottom: 30px; opacity: 1;}
+      }
+      @-webkit-keyframes fadeout{
+        from{bottom: 30px; opacity: 1;}
+        to{bottom:0; opacity:0}
+      }
+      @keyframes fadeout{
+        from{bottom:0; opacity:0}
+        to{bottom: 30px; opacity: 1;}
+      }
+
+
+        
+
+
+
+
+
+
+
+
